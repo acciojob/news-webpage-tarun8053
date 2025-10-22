@@ -1,3 +1,4 @@
+/*  your css code here. If applicable */
 /* General body */
 body {
   background-color: #f5f5f5;
@@ -13,18 +14,18 @@ body {
   background-color: #011e29;
   display: flex;
   align-items: center;     
-  justify-content: center; 
+  justify-content: center; /* horizontal center */
   color: white;
 }
 
 .header h2 {
-  margin: 0; /* remove default heading margin */
+  margin: 0; /* remove default heading margin for perfect centering */
 }
 
 /* Container for sections */
 .container {
   display: flex;
-  padding: 10px;
+  padding: 4px 10px 0 10px;
   width: 97%;
   gap: 2px; /* spacing between sections */
 }
@@ -32,7 +33,6 @@ body {
 /* Latest News Section */
 .latest-news-section {
   width: 25%;
-  height: auto;
   background-color: white;
   padding: 9px;
   border-radius: 10px;
@@ -59,19 +59,21 @@ body {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
   padding: 10px;
   box-sizing: border-box;
 }
 
 .pictorial-news-section h3 {
   margin: 0 0 10px 0; /* spacing below heading */
+  text-align: center; /* center heading text */
 }
 
+/* Image container inside pictorial news */
 .imgs {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -82,7 +84,7 @@ body {
   height: 100px;
   width: 70%;
   overflow: hidden; /* prevent overflow */
-  /* background-color removed */
+  /* background-color removed to show only images */
 }
 
 .img1 img, .img2 img, .img3 img {
@@ -91,5 +93,3 @@ body {
   object-fit: cover; /* scale/crop image to fit container */
   display: block;
 }
-
-
