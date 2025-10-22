@@ -1,93 +1,95 @@
-/*  your css code here. If applicable */
-body{
-	background-color:#f5f5f5;
-	margin:0px;
-	padding:0px;
-	box-sizing:border-box;
-}
-.header{
-	height:100px;
-	background-color : #011e29;
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	color:white;
-	
-}
-.container{
-	display:flex;
-	padding:4px 10px 0px 10px;
-	width:97%;
-	
-}
-.latest-news-section{
-	width:25%;
-	height:40%;
-	background-color:white;
-	padding:9px;
-	border-radius:10px;
-	margin-right:2px;
-}
-.main-artical{
-	width:50%;
-	height:50%;
-	background-color:white;
-	padding:8px;
-	border-radius:10px;
-	margin-right:2px;
-	text-align:center;
-	
-}
-.main-artical h3{
-	font-weight:900;
+/* General body */
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
+/* Header */
+.header {
+  height: 100px;
+  background-color: #011e29;
+  display: flex;
+  align-items: center;     
+  justify-content: center; 
+  color: white;
+}
+
+.header h2 {
+  margin: 0; /* remove default heading margin */
+}
+
+/* Container for sections */
+.container {
+  display: flex;
+  padding: 10px;
+  width: 97%;
+  gap: 2px; /* spacing between sections */
+}
+
+/* Latest News Section */
+.latest-news-section {
+  width: 25%;
+  height: auto;
+  background-color: white;
+  padding: 9px;
+  border-radius: 10px;
+}
+
+/* Main Article Section */
+.main-artical {
+  width: 50%;
+  background-color: white;
+  padding: 8px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.main-artical h3 {
+  font-weight: 900;
+  margin: 0;
+}
+
+/* Pictorial News Section */
 .pictorial-news-section {
   width: 25%;
   background-color: white;
   border-radius: 15px;
-  margin-right: 2px;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* fixed semicolon */
+  justify-content: center;
   align-items: center;
   padding: 10px;
   box-sizing: border-box;
 }
 
+.pictorial-news-section h3 {
+  margin: 0 0 10px 0; /* spacing below heading */
+}
+
 .imgs {
   display: flex;
-  flex-direction: column; /* stack vertically */
+  flex-direction: column;
   justify-content: center;
-  align-items: center;    /* center each image horizontally */
-  gap: 10px;              /* space between the boxes */
+  align-items: center;
+  gap: 10px;
   width: 100%;
 }
 
 .img1, .img2, .img3 {
   height: 100px;
   width: 70%;
-}
-.img1 {
-  background-color: black;
-	
-}
-.img2 {
-  background-color: white;
-}
-.img3 {
-  background-color: black;
-}
-.img1, .img2, .img3 {
-  height: 100px;
-  width: 70%;
-  overflow: hidden; /* hide any overflow if needed */
+  overflow: hidden; /* prevent overflow */
+  /* background-color removed */
 }
 
 .img1 img, .img2 img, .img3 img {
-  width: 100%;      /* image fills container width */
-  height: 100%;     /* image fills container height */
-  object-fit: cover; /* crop/scale image to fit nicely */
-  display: block;    /* removes default inline spacing */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* scale/crop image to fit container */
+  display: block;
 }
+
 
